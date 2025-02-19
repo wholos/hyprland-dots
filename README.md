@@ -9,7 +9,7 @@ Hyprland dot-files!
 ![7 Image](https://github.com/wholos/hyprland-dots/blob/main/wlogout.png)
 How to install?
 ``` bash
-sudo pacman -S mako waybaar hyprpaper fastfetch rofi
+sudo pacman -S mako waybaar hyprpaper hyprlock fastfetch rofi
 yay -S wlogout
 git clone https://github.com/wholos/hyprland-dots
 Copy files to config
