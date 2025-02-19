@@ -1,0 +1,53 @@
+{
+    "layer": "top",
+	"spasing": 2,
+    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["clock","network","bluetooth","wireplumber","upower","tray","custom/power"],
+    "hyprland/window": {
+        "max-length": 50
+    },
+	"tray": {
+        "show-passive-items": true,
+        "spacing": 10
+    },
+    "clock": {
+		"format-alt": "{%H:%M}"
+    },
+	"bluetooth": {
+        "format": "{icon}",
+        "format-icons": {
+        "enabled": "",
+        "disabled": ""
+    },
+	    "on-click": "blueman-manager"
+    },
+	"network": {
+    	"interface": "wlp2s0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+	"wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "  muted",
+        "format-icons": {
+        	"headphone": "",
+            "default": [" ", " ", " "],
+        },
+        "on-click": "pavucontrol",
+    },
+	"custom/power": {
+	    "tooltip": false,
+        "on-click": "wlogout -p layer-shell &",
+        "format": "⏻",
+    },
+	"upower": {
+    },
+}
