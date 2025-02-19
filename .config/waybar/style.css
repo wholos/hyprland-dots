@@ -1,0 +1,96 @@
+* {
+    min-height: 0;
+    min-width: 0;
+    font-family: Lexend, "JetBrains Mono";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+window#waybar {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    /* background-color: #1e1e2e; */
+    /* background-color: #181825; */
+    background-color: #11111b;
+    /* background-color: rgba(24, 24, 37, 0.6); */
+}
+
+#workspaces button {
+    padding: 0.3rem 0.6rem;
+    margin: 0.4rem 0.25rem;
+    border-radius: 6px;
+    /* background-color: #181825; */
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    background-color: #b0b0b0;
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#mode, #clock, #upower, #network, #wireplumber, #bluetooth, #tray, #custom-power {
+	padding: 0.3rem 0.6rem;
+    margin: 0.4rem 0.25rem;
+    border-radius: 6px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#clock {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#upower {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#wireplumber {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#bluetooth {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#network {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#tray {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+#custom-power {
+    background-color: #64727D;
+    color: #ffffff;
+}
+
+@keyframes blink {
+    to {
+		padding: 0.3rem 0.6rem;
+        margin: 0.4rem 0.25rem;
+        border-radius: 6px;
+        background-color: #64727D;
+        color: #ffffff;
+    }
+}
